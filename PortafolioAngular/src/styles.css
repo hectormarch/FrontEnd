@@ -1,0 +1,144 @@
+
+/* HEADER */
+
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/Fondo2.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+
+}
+
+#logo_ArgentinaPrograma{
+  height: 60px;
+  width: 120px;
+  object-fit: cover;
+}
+#banner div:nth-child(2){
+  font-size: small;
+  margin-top: 20px;
+
+}
+@media screen and (max-width: 568px){
+  header{
+      height: 200px;
+  }
+
+  #logo_ArgentinaPrograma{
+      height: 40px;
+      width: 80px;
+  }
+  #banner div:nth-child(2){
+      font-size: x-small;
+      margin-top: 12px;
+
+  }
+  #redes_Sociales{
+      width: auto;
+  }
+}
+@media screen and (max-width: 950px){
+  header{
+      height: 250px;
+  }
+
+  #logo_ArgentinaPrograma{
+      height: 40px;
+      width: 80px;
+  }
+  #banner div:nth-child(2){
+      font-size: x-small;
+      margin-top: 12px;
+
+  }
+  #redes_Sociales{
+      width: auto;
+  }
+}
+
+.bi-facebook{
+  color: #3b5998
+}
+.bi-linkedin{
+  color: #55acee;
+}
+.bi-discord{
+  color: #094d82;
+}
+.bi-whatsapp{
+  color: #3CCF4E
+}
+.bi-box-arrow-in-right{
+  color: #4b75cf;
+}
+.bi-pencil:hover{
+  color:white
+
+}
+
+
+header div:nth-child(2){
+  color: white;
+}
+
+.bi-facebook:hover, .bi-discord:hover, .bi-whatsapp:hover, .bi-linkedin:hover, .bi-box-arrow-in-right:hover{
+  color: aliceblue;
+}
+
+
+
+/* MAIN */
+
+h4 {
+  color: black;
+  /* background: linear-gradient(#4f3972, #bcb9c0, #5d4a70); */
+  background-color: #696f7c;
+  text-align: center;
+  margin: auto;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  box-shadow: 0 0 20 0 blue;
+
+}
+
+
+.sombreado:hover{
+  text-decoration: black;
+}
+
+
+h3 {
+  text-align: center;
+}
+
+
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active{
+  color: blue;
+}
+
+
+
+h5 {
+  margin: 15px auto;
+}
+
+.project {
+  margin: 1em 0;
+}
+
+.boton {
+  margin-top: 95px;
+  margin-left: -30px;
+}
+
+

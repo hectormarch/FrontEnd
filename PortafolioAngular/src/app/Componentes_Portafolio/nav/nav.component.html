@@ -1,0 +1,73 @@
+<nav class="m-auto container-fluid px-2">
+
+
+  <div class="row g-0" >
+
+      <div class="col-lg-2 col-3 d-flex">
+              <div>
+                  <img src="../assets/Foto_Perfil.png" alt="Photo"  class="img-fluid" >
+              </div>
+              <div class="m-auto">
+                  <a href="#" class="" ><i class="bi bi-pencil-square"></i></a>
+              </div>
+
+      </div>
+
+      <div class="col-lg-2 col-9 m-auto p-auto d-flex">
+
+          <div class="p-auto m-auto">
+              <h6>
+                  <p id="nombre">{{name}}</p>
+                  <p id="titulo">{{title}}</p>
+              </h6>
+          </div>
+
+        <div id="formul" class="d-none m-auto p-auto">
+           <form action="/action_page.php" (submit)="onSubmit()" class="container" >
+              <div>
+                <label for="nombre" class="form-label"><strong>Nombre:</strong></label>
+                <input type="text" [(ngModel)]="name" #nameInput placeholder="Pedro Perez" class="form-control" id="newName" aria-describedby ="text" required>
+              </div>
+              <div>
+                <label for="titulo"><strong>Titulo:</strong></label>
+                <input type="text"  placeholder="Web Developer" class="form-control" id="newTitle" aria-describedby ="text" required>
+              </div>
+              <button id="cargar_nombres"  type="submit" class="btn btn-outline-success my-2">Success</button>
+            </form >
+
+        </div>
+
+        <div  class="p-auto m-auto">
+              <a (click)="newName()" class="" ><i class="bi bi-pencil-square"></i></a>
+        </div>
+
+      </div>
+      <div class="col-lg-8 col-sm-12 m-auto p-auto d-flex">
+          <div>
+              <p id="descrption">{{description}}</p>
+              <label class="d-none" id="bio">Provide a bio:
+                <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+              </label>
+              <img src="../assets/bxl-gmail 1.png" alt="Email" height="25" width="25" class="sombreado"><a href="mailto:araujomarchena@gmail.com?subject=Contact WebPortfolio" target="_blank">araujomarchena@gmail.com</a>
+
+              <img src="../assets/bxs-phone 1.png" alt="Phone" height="25" width="25" class="sombreado"><a href="tel:+541162519463" target="_blank">+541162519463</a>
+
+              <img src="../assets/bx-map 1.png" alt="Maps" height="25" width="25" ><a href="https://goo.gl/maps/BJVqfeEc5ZMM4WDx8" target="_blank">Buenos Aires, Argentina</a>
+
+              <img src="../assets/bxl-linkedin-square 2.png" alt="Linkedin" height="25" width="25"><a href="https://www.linkedin.com/in/haraujom/" target="_blank">https://www.linkedin.com/in/haraujom/</a>
+          </div>
+          <div class="text-center px-4 m-auto">
+              <a  href="#" class="" ><i class="bi bi-pencil-square"></i></a>
+              <a  (click)="eraseDescrption" href="#" class="" ><i class="bi bi-x-circle"></i></a>
+
+          </div>
+
+
+      </div>
+
+
+  </div>
+
+</nav>
+
+<hr class="m-2">
