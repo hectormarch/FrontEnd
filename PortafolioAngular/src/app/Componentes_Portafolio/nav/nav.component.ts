@@ -43,7 +43,7 @@ export class NavComponent implements OnInit {
 
     this.name=document.getElementById("newName")?.nodeValue
     console.log(this.name)
-    
+
     const formul=document.getElementById('formul');
     formul?.classList.add('d-none');
 
