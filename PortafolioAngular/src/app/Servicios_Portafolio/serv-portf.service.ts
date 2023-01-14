@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServPortfService {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
-  obtenerDatos(){
-    console.log("El servicio esta OK")
+  obtenerDatos():Observable<any>{
+    return this.http.get('./assets/miportfolio/portfolio.json');
+
   }
 
 }
