@@ -1,13 +1,21 @@
 <div class="container-fluid g-0">
   <div class="row g-0">
-      <h4>PROYECTS</h4>
-      <div class="d-flex ">
-          <h5 class="text-center m-auto p-auto">Web Full Stack Portfolio</h5>
-          <ul >
-              <li class="project">Design a web portfolio with a descentralized arquitecture. Desing the FrontEnd using HTML, CSS, Boostrap, Angular and TypeScript.  </li>
-              <li class="project">Design a Database usin MySQL.</li>
-              <li class="project">Create and desing the APIs needed (BackEnd) to conect with the FrontEnd.</li>
-          </ul>
-      </div>
+    <div class="col-11">
+        <h4> PROYECTS </h4>
+    </div>
+    <div class="col-1">
+        <a href="#"><i class="bi bi-plus-square"></i></a>
+    </div>
   </div>
+
+      <ul  *ngFor="let proyecto of proyectos" class="row g-0">
+          <div class="col-4 d-flex"><h5 class="text-center m-auto p-auto">{{proyecto.nombre}}</h5></div>
+          <div class="col-7 d-flex m-auto p-auto"><p>{{proyecto.descripcion}}</p></div>
+          <div class="col-1 p-auto m-auto">
+            <a href="#" class="" ><i class="bi bi-pencil-square"></i></a>
+            <a href="#" class="" ><i class="bi bi-x-circle"></i></a>
+          </div>
+
+      </ul>
+
 </div>

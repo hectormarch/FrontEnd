@@ -5,7 +5,8 @@
 
       <div class="col-lg-2 col-3 d-flex">
               <div>
-                  <img src="../assets/Foto_Perfil.png" alt="Photo"  class="img-fluid" >
+                  <img [src]="navPrincipal.fotoPerfil"
+                  alt="Photo"  class="img-fluid" >
               </div>
               <div class="m-auto">
                   <a href="#" class="" ><i class="bi bi-pencil-square"></i></a>
@@ -17,8 +18,8 @@
 
           <div class="p-auto m-auto">
               <h6>
-                  <p id="nombre">{{name}}</p>
-                  <p id="titulo">{{title}}</p>
+                  <p id="nombre">{{navPrincipal.name}}</p>
+                  <p id="titulo">{{navPrincipal.titulo}}</p>
               </h6>
           </div>
 
@@ -38,13 +39,13 @@
         </div>
 
         <div  class="p-auto m-auto">
-              <a (click)="newName()" class="" ><i class="bi bi-pencil-square"></i></a>
+              <a class="" ><i class="bi bi-pencil-square"></i></a>
         </div>
 
       </div>
       <div class="col-lg-8 col-sm-12 m-auto p-auto d-flex">
           <div>
-              <p id="descrption">{{description}}</p>
+              <p id="descrption">{{navPrincipal.description}}</p>
               <label class="d-none" id="bio">Provide a bio:
                 <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
               </label>
@@ -58,7 +59,7 @@
           </div>
           <div class="text-center px-4 m-auto">
               <a  href="#" class="" ><i class="bi bi-pencil-square"></i></a>
-              <a  (click)="eraseDescrption" href="#" class="" ><i class="bi bi-x-circle"></i></a>
+              <a href="#" class="" ><i class="bi bi-x-circle"></i></a>
 
           </div>
 

@@ -1,9 +1,12 @@
 
 {
 
-  "name": "Hector",
-  "titulo": "Ingeniero",
-  "description": "Full Stack Web Developer conocimientos en ....",
+  "name": "Hector Araujo",
+  "titulo": "Ingeniero, Full Stack Developer",
+  "description": "Electrical Engineer with knowledge in FrontEnd(Angular, Javascript, TypeScript) y BackEnd (MySQL, JAVA, Spring Boot)",
+  "logoAr":"../assets/Logo Argentina Programa.png",
+  "fotoPerfil":"../assets/Foto_Perfil.png",
+
   "education":[
     {
       "university":"ARGENTINA PROGRAMA INTI",
@@ -28,15 +31,61 @@
     }
   ],
 
-  "experience":[{
-    "id": 1,
-    "trabajo":"Ingeniero de Operaciones",
+  "experience":[
+  {
+    "trabajo":"Operations Engineer",
     "empresa":"Edenor",
+    "descripcion":"Operate medium and high voltage equipments. Supervise electrical teams. Desing engineering details for synchronism projects. Provide customer support.",
     "fechaInicio":"2006",
-    "fechaFin":"2012"
-
-  }]
-
+    "fechaFin":"Actual",
+    "imagen":"../assets/logo-Edenor-color.png"
+  },
+  {
+    "trabajo":"Planner Maintenance SAP-PM",
+    "empresa":"Montana Gráfica",
+    "descripcion":"Planning preventive and corrective maintenance using SAP-PM. Develop maintenance indicators that allow evaluating trends and behavior of the equipment. Provide technical support to production. Report status of equipments to the plant manager.",
+    "fechaInicio":"2015",
+    "fechaFin":"2017",
+    "imagen":"../assets/Logo-MontanaGrafica.png"
+  },
+  {
+    "trabajo":"Support Engineer",
+    "empresa":"SESA",
+    "descripcion":"Planning preventive and corrective maintenance for generator. Programming electrical modules for generator set. Desing engineering details for synchronism projects. Provide customer support.",
+    "fechaInicio":"2013",
+    "fechaFin":"2015",
+    "imagen":"../assets/Logo-Sesa.png"
+  }],
+  "habilidades":[
+    {"nombre":"Javascript",
+      "porcentaje":""},
+    {"nombre":"HTML 5",
+    "porcentaje":""},
+    {"nombre":"CSS",
+    "porcentaje":""},
+    {"nombre":"BOOTSTRAP",
+    "porcentaje":""},
+    {"nombre":"TypeScript",
+    "porcentaje":""},
+    {"nombre":"ANGULAR",
+    "porcentaje":""},
+    {"nombre":"JAVA",
+    "porcentaje":""},
+    {"nombre":"NODE JS",
+    "porcentaje":""},
+    {"nombre":"MySQL",
+    "porcentaje":""}
+  ],
+  "proyectos":[
+    {
+      "nombre":"Web Full Stack Portfolio",
+      "descripcion":"Design a web portfolio with a descentralized arquitecture. Desing the FrontEnd using HTML, CSS, Boostrap, Angular and TypeScript. Design a Database usin MySQL. Create and desing the APIs needed (BackEnd) to conect with the FrontEnd."
+    },
+    {
+      "nombre":"Design a portal view of a webpage",
+      "descripcion":"Desing the view of a webpage using HTML,CSS, JS y Bootstrap"
+    }
+  ]
 
 }
 

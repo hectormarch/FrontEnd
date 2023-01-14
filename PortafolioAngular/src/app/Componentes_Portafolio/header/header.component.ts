@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ServPortfService } from 'src/app/Servicios_Portafolio/serv-portf.service';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  head:any;
+  constructor(private datosPortfolio:ServPortfService) { }
 
   ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos().subscribe(portfolio=>
+      this.head=portfolio)
   }
 
 }
