@@ -1,0 +1,42 @@
+
+{
+
+  "name": "Hector",
+  "titulo": "Ingeniero",
+  "description": "Full Stack Web Developer conocimientos en ....",
+  "education":[
+    {
+      "university":"ARGENTINA PROGRAMA INTI",
+      "titulo":"Full Stack Developer",
+      "fechaInicio":"20022",
+      "fechaFin":"2023",
+      "imagen":"../assets/Logo-ArgentinaPrograma.png"
+    },
+    {
+    "university":"CODO A CODO 4.0",
+    "titulo":"Full Stack Developer JS",
+    "fechaInicio":"2022",
+    "fechaFin":"2023",
+    "imagen":"../assets/CODOACODO.png"
+    },
+    {
+    "university":"UNEXPO",
+    "titulo":"Ingeniero Electricista",
+    "fechaInicio":"2006",
+    "fechaFin":"2012",
+      "imagen":"../assets/Logo-Unexpo.png"
+    }
+  ],
+
+  "experience":[{
+    "id": 1,
+    "trabajo":"Ingeniero de Operaciones",
+    "empresa":"Edenor",
+    "fechaInicio":"2006",
+    "fechaFin":"2012"
+
+  }]
+
+
+}
+

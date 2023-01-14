@@ -10,7 +10,7 @@ import { ExperienceComponent } from './Componentes_Portafolio/experience/experie
 import { EducationComponent } from './Componentes_Portafolio/education/education.component';
 import { SkillsComponent } from './Componentes_Portafolio/skills/skills.component';
 import { ProyectsComponent } from './Componentes_Portafolio/proyects/proyects.component';
-
+import {HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +22,10 @@ import { ProyectsComponent } from './Componentes_Portafolio/proyects/proyects.co
     EducationComponent,
     SkillsComponent,
     ProyectsComponent,
+
   ],
   imports: [
-    BrowserModule, FormsModule, ReactiveFormsModule
+    BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
