@@ -4,7 +4,7 @@
           <h4> WORK EXPERIENCE </h4>
       </div>
       <div class="col-1">
-          <a href="#"><i class="bi bi-plus-square"></i></a>
+          <a href="http://localhost:8081/persona/experiencia/agregar" target="_blank"><i class="bi bi-plus-square"></i></a>
       </div>
   </div>
 
@@ -12,14 +12,14 @@
       <div class="col-8 d-flex">
           <ul> <h5>{{experiencia.trabajo}}</h5>
 
-            <p>{{experiencia.descripcion}}</p>
-            <h6>{{experiencia.fechaInicio}}-{{experiencia.fechaFin}}</h6>
+            <p>{{experiencia.empresa}}</p>
+            <h6>{{experiencia.fecha_inicio}}-{{experiencia.fecha_fin}}</h6>
 
           </ul>
       </div>
       <div class="col-4 justify-content-center d-flex m-auto p-auto">
           <figure class="m-auto">
-              <img [src]="experiencia.imagen" alt="Edenor"  class="img-fluid">
+              <img [src]="experiencia.es_trabajo_actual" alt="Edenor"  class="img-fluid">
           </figure>
           <div class="m-auto">
               <a href="#" class="" ><i class="bi bi-pencil-square"></i></a>
