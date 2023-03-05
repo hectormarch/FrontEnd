@@ -11,6 +11,9 @@ import { EducationComponent } from './Componentes_Portafolio/education/education
 import { SkillsComponent } from './Componentes_Portafolio/skills/skills.component';
 import { ProyectsComponent } from './Componentes_Portafolio/proyects/proyects.component';
 import {HttpClientModule } from '@angular/common/http';
+import { NewExperienciaComponent } from './Componentes_Portafolio/new-experiencia/new-experiencia.component';
+import { HomeComponent } from './Componentes_Portafolio/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,10 +25,12 @@ import {HttpClientModule } from '@angular/common/http';
     EducationComponent,
     SkillsComponent,
     ProyectsComponent,
+    NewExperienciaComponent,
+    HomeComponent,
 
   ],
   imports: [
-    BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule
+    BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
