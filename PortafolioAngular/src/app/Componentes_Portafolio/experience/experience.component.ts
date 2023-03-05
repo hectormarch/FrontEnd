@@ -14,14 +14,20 @@ export class ExperienceComponent implements OnInit {
   constructor(private datosPortfolio:ServPortfService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.getUsers().subscribe(
+    this.datosPortfolio.getExperiencia().subscribe(
       experienceList=>this.experienceList=experienceList,
       error=>console.error(error)
     );
+    this.agregarExperiencia();
     }
 
+    agregarExperiencia():void{
+      this.datosPortfolio.getExperiencia().subscribe(data=>{this.experienceList=data;})
+    }
 
   }
+
+
 
 
 

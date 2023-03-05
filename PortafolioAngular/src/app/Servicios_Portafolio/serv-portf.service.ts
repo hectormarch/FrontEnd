@@ -9,7 +9,7 @@ import { Experiencia } from '../Entity/Experiencia';
 })
 export class ServPortfService {
 
-  private apiUrl = 'http://localhost:8081/persona/experiencias';
+  private apiUrl = 'http://localhost:8081/persona/experiencia';
 
   constructor(private http:HttpClient) { }
 
@@ -18,8 +18,18 @@ export class ServPortfService {
 
   }
 
-  getUsers(): Observable<Experiencia[]> {
+  getExperiencia(): Observable<Experiencia[]> {
     return this.http.get<Experiencia[]>(this.apiUrl);
   }
 
+  saveExperiencia(experiencia:Experiencia):Observable<any>{
+    return this.http.post<any>(this.apiUrl+'/agregar', experiencia)
+  }
+
+  modificarExperiencia(experiencia:Experiencia):Observable<any>{
+    return this.http.put<any>(this.apiUrl+'/modificar', experiencia)
+  }
+  eliminarExperiencia(id:number):Observable<any>{
+    return this.http.delete<any>(this.apiUrl+`delete/${id}`);
+  }
 }
